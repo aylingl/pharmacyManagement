@@ -50,7 +50,7 @@ namespace pharmacyManagement.screenControls
 
                 clsVisitor d1 = new clsVisitor(intId, strFName, strLName, strPhoneNumber);
                 lstVisitor.Add(d1);
-
+                /// comment for git
             }
         }
     }

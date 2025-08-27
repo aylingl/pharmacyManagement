@@ -62,8 +62,7 @@
               "RelativeToolTip": "classes\\clsVisitorTypeMedicine.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T12:26:09.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T12:26:09.533Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "classes\\clsVisitor.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T12:25:56.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T12:25:56.588Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "screenControls\\visitorTypeMedicineScreenControl.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T09:10:20.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:10:20.112Z"
             },
             {
               "$type": "Document",
@@ -100,8 +97,7 @@
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\visitorTypeMedicineScreenControl.xaml",
               "RelativeToolTip": "screenControls\\visitorTypeMedicineScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-27T09:10:11.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:10:11.112Z"
             },
             {
               "$type": "Document",
@@ -111,7 +107,7 @@
               "RelativeDocumentMoniker": "screenControls\\visitorsScreenControl.xaml.cs",
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\visitorsScreenControl.xaml.cs",
               "RelativeToolTip": "screenControls\\visitorsScreenControl.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAACcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAADQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T09:03:06.745Z",
               "EditorCaption": ""
@@ -125,8 +121,7 @@
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\visitorsScreenControl.xaml",
               "RelativeToolTip": "screenControls\\visitorsScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-27T09:02:59.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:02:59.589Z"
             },
             {
               "$type": "Document",
@@ -137,8 +132,7 @@
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\usersScreenControl.xaml",
               "RelativeToolTip": "screenControls\\usersScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-27T09:02:14.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:02:14.075Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\medicineTypesScreenControl.xaml",
               "RelativeToolTip": "screenControls\\medicineTypesScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-27T09:01:57.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:01:57.498Z"
             },
             {
               "$type": "Document",
@@ -161,8 +154,7 @@
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\medicineCompaniesScreenControl.xaml",
               "RelativeToolTip": "screenControls\\medicineCompaniesScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-27T09:01:09.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:01:09.864Z"
             },
             {
               "$type": "Document",
@@ -173,8 +165,7 @@
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\customersScreenControl.xaml",
               "RelativeToolTip": "screenControls\\customersScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-27T09:00:53.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T09:00:53.985Z"
             }
           ]
         }
