@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="PrimaryBlueColor">#FF494F62</SolidColorBrush>
+    <SolidColorBrush x:Key="MenuStatusColor">#FFABB1CF</SolidColorBrush>
+    <SolidColorBrush x:Key="ApplicationTitleColor">#FF2D8BC0</SolidColorBrush>
+    
+    <SolidColorBrush x:Key="PrimaryGreenColor"> #00ff00</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryRedColor">#ff0055</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ButtonsColor">#000055</SolidColorBrush>
+    <SolidColorBrush x:Key="menuButtonscolor">#B6D0E2</SolidColorBrush>
+    <SolidColorBrush x:Key="menuButtonscolorMHover">#699EC3</SolidColorBrush>
+    <SolidColorBrush x:Key="screenBackgroundColor">#CCE1E6</SolidColorBrush>
+    <SolidColorBrush x:Key="screenBorderColor">#36616C</SolidColorBrush>
+</ResourceDictionary>

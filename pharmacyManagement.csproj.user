@@ -5,5 +5,29 @@
     <Compile Update="forms\wndMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="forms\wndPrctice.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\customersScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\medicineCompaniesScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\medicineScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\medicineTypesScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\usersScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\visitorsScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="screenControls\visitorTypeMedicineScreenControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

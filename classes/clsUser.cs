@@ -26,14 +26,8 @@ namespace pharmacyManagement.classes
         }
         ////================================================================= db Methods
 
-        /*
-        public static DataTable selectAll()
-        {
-            string cmdSelect =
-                @" select * from tblUsers ;";
-            DataTable dt1 = clsMySqlHelper.select(cmdSelect);
-            return dt1;
-        }
+
+      
         public static clsResultDb insertToDb(clsUser newUser)
         {
 
@@ -45,6 +39,13 @@ namespace pharmacyManagement.classes
                 ;";
             clsResultDb r1 = clsMySqlHelper.execute(cmdInsert);
             return r1;
+        }
+        public static DataTable selectAll()
+        {
+            string cmdSelect =
+                @" select * from tblUsers ;";
+            DataTable dt1 = clsMySqlHelper.select(cmdSelect);
+            return dt1;
         }
         public static clsResultDb deleteFromDb(int id)
         {
@@ -69,6 +70,7 @@ namespace pharmacyManagement.classes
             clsResultDb r2 = clsMySqlHelper.execute(cmdUpdate);
             return r2;
         }
+        /*
         public static clsResultCheckUser checkUser(string phoneNumber, string encryptedPass)
         {
             /*
@@ -97,9 +99,9 @@ namespace pharmacyManagement.classes
             {
                 return false;
             }
-            */
+            
             //============= old version end
-            /*
+            
             if (dt2.Rows.Count > 0)
             {
                 string strFullName = dt2.Rows[0]["fullName"].ToString();
@@ -112,10 +114,6 @@ namespace pharmacyManagement.classes
                 return r1;
             }
             
-
-        }
-    */
-    
+        */
     }
-
 }

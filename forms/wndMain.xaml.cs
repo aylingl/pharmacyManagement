@@ -23,5 +23,46 @@ namespace pharmacyManagement.forms
         {
             InitializeComponent();
         }
+
+        private void window_loaded(object sender, RoutedEventArgs e)
+        {
+           // labUserFullName.Text = "ایلیییییییییییین گلچیننننننننننن" ;
+            int kjdsfhsdkjf = 0;
+        }
+
+        private void customersMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain.Child = new screenControls.customersScreenControl ();
+        }
+
+        private void visitorTypeMedicineMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain.Child = new screenControls.visitorTypeMedicineScreenControl ();
+        }
+
+        private void visitorMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain .Child = new screenControls.visitorsScreenControl ();
+        }
+
+        private void medicineMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain .Child = new screenControls.medicineScreenControl ();
+        }
+
+        private void usersMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain.Child = new screenControls.usersScreenControl();
+        }
+
+        private void medicineCompaniesMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain.Child = new screenControls .medicineCompaniesScreenControl ();
+        }
+
+        private void medicineTypeMenuClicked(object sender, RoutedEventArgs e)
+        {
+            brdMain .Child = new screenControls .medicineTypesScreenControl ();
+        }
     }
 }

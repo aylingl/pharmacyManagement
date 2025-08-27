@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="pharmacyManagement.screenControls.usersScreenControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:pharmacyManagement.screenControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Loaded="control_Loaded">
+
+    <UserControl.Resources >
+        <DataTemplate x:Key="dtTemplate1">
+
+            <Grid Background="Azure"  >
+                <ListBox >
+                    <ListBoxItem >
+                        <Border Background="{ StaticResource screenBackgroundColor }"
+                        BorderBrush="{StaticResource PrimaryBlueColor }" 
+                        BorderThickness="2"
+                        Height=" 30"
+                        Width="700"
+                        CornerRadius="12">
+                            <Grid >
+                                <Grid.ColumnDefinitions >
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width ="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column ="0"
+                            Content="aylin golchin"
+                            FontSize="12"
+                               Margin="10,0,0,0"/>
+                                <Label Grid.Column="1"
+                              Content="09123234587"
+                              FontSize="12"
+                               Margin="10,0,0,0"/>
+                                <Label Grid.Column="2"
+                            Margin="100,0,0,0"
+                            Content="fjjfjvvvg"/>
+                                <Label Grid.Column="3"
+                               FontSize="14"
+                               FontWeight ="Bold" 
+                               Content="docktor"
+                               Margin="10,0,0,0"/>
+
+                            </Grid>
+                        </Border>
+
+                    </ListBoxItem>
+                    <ListBoxItem >
+                        <Border Background="{ StaticResource screenBackgroundColor }"
+            BorderBrush="{StaticResource PrimaryBlueColor }" 
+            BorderThickness="2"
+            Height=" 30"
+            Width="700"
+            CornerRadius="12">
+                            <Grid >
+                                <Grid.ColumnDefinitions >
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                    <ColumnDefinition Width ="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column ="0"
+                Content="aylin golchin"
+                FontSize="12"
+                   Margin="10,0,0,0"/>
+                                <Label Grid.Column="1"
+                  Content="09123234587"
+                  FontSize="12"
+                   Margin="10,0,0,0"/>
+                                <Label Grid.Column="2"
+                Margin="100,0,0,0"
+                Content="fjjfjvvvg"/>
+                                <Label Grid.Column="3"
+                   FontSize="14"
+                   FontWeight ="Bold" 
+                   Content="docktor"
+                   Margin="10,0,0,0"/>
+
+                            </Grid>
+                        </Border>
+
+                    </ListBoxItem>
+                </ListBox>
+
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid >
+        <ListBox  x:Name="lstUsersView"
+                  ItemTemplate="{StaticResource dtTemplate1 }"
+                  Background="Transparent" 
+                  BorderBrush="Transparent ">
+        </ListBox>
+    </Grid>
+
+</UserControl>
