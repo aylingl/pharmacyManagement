@@ -9,10 +9,10 @@ namespace pharmacyManagement.classes
 {
     public class clsVisitor
     {
-        public int id;
-        public string fname;
-        public string lname;
-        public string phoneNumber;
+        public int id { get; set; }
+        public string fName { get; set; }
+        public string lName { get; set; }
+        public string phoneNumber { get; set; }
         /// <summary>
         /// this is my constructor, please fill all parameters...
         /// 
@@ -24,14 +24,14 @@ namespace pharmacyManagement.classes
         public clsVisitor(int id, string fname, string lname, string phoneNumber)
         {
             this.id = id;
-            this.fname = fname;
-            this.lname = lname;
+            this.fName = fname;
+            this.lName = lname;
             this.phoneNumber = phoneNumber;
         }
         public clsVisitor(string fname, string lname, string phoneNumber)
         {
-            this.fname = fname;
-            this.lname = lname;
+            this.fName = fname;
+            this.lName = lname;
             this.phoneNumber = phoneNumber;
         }
 
@@ -44,7 +44,7 @@ namespace pharmacyManagement.classes
                    INSERT INTO tblvisitors
                    (fname, lname, phonenumber)
                     values
-                    ('" + newvisitor.fname + "','" + newvisitor.lname + "', '" + newvisitor.phoneNumber + @"')
+                    ('" + newvisitor.fName + "','" + newvisitor.lName + "', '" + newvisitor.phoneNumber + @"')
                      ;
                  ";
             clsResultDb dbsAnswerInsert = clsMySqlHelper.execute(cmdInsert);
@@ -73,8 +73,8 @@ namespace pharmacyManagement.classes
             string cmdUpdate =
                 @"update tblvisitors 
                     set 
-                        fname = '" + edVisitor.fname + @"',
-                        lname = '" + edVisitor.lname + @"',
+                        fname = '" + edVisitor.fName + @"',
+                        lname = '" + edVisitor.lName + @"',
                         phonenumber = '" + edVisitor.phoneNumber + @"'
                     where
                         id = " + edVisitor.id + @"

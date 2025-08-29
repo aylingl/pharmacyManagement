@@ -9,10 +9,11 @@ namespace pharmacyManagement.classes
 {
     public class clsCustumer
     {
-        public int id;
-        public string fname;
-        public string lname;
-        public string phoneNumber;
+        public int id { get; set; }
+        
+        public string fname { get; set; }
+        public string lname { get; set; }
+        public string phoneNumber { get; set; }
 
         /// <summary>
         /// this is my constructor, please fill all parameters...
@@ -27,9 +28,11 @@ namespace pharmacyManagement.classes
             this.phoneNumber = phoneNumber;
         }
 
-        public string fullName()
+        public string fullName
         {
-            return fname + " " + lname;
+            get
+            { return fname + " " + lname; }
+           
         }
 
         public string fullNamePlus(string delimeter)

@@ -11,8 +11,11 @@
     <UserControl.Resources >
         <DataTemplate x:Key="dtTemplate1">
             <Border CornerRadius="15"
-                  Background="Bisque" 
-                  x:Name="brd2">
+                    Background="{StaticResource listItemBackgroundColor }"
+                    BorderBrush="{StaticResource PrimaryBlueColor }"
+                    x:Name="brd2"
+                    BorderThickness="2"
+                    >
 
                             <Grid Width="500"
         >

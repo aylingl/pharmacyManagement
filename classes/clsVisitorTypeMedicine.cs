@@ -9,9 +9,9 @@ namespace pharmacyManagement.classes
 {
     public class clsVisitorTypeMedicine
     {
-        public int id;
-        public string type;
-        public string phoneNumber;
+        public int id { get; set; }
+        public string type { get; set; }
+        public string phoneNumber { get; set; }
         /// <summary>
         /// this is my constructor, please fill all parameters...
         /// 

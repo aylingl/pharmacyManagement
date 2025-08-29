@@ -9,11 +9,11 @@ namespace pharmacyManagement.classes
 {
     public class clsUser
     {
-        public int id;
-        public string fullName;
-        public string phoneNumber;
-        public string encryptedPass;
-        public string jobTitle;
+        public int id { get; set; }
+        public string fullName { get; set; }
+        public string phoneNumber { get; set; }
+        public string encryptedPass { get; set; }
+        public string jobTitle { get; set; }
 
         public clsUser(int id, string fullName, string phoneNumber, string encryptedPass, string jobTitle)
         {

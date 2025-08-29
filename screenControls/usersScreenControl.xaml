@@ -14,8 +14,8 @@
             <Grid Background="Azure"  >
                 <ListBox >
                     <ListBoxItem >
-                        <Border Background="{ StaticResource screenBackgroundColor }"
-                        BorderBrush="{StaticResource PrimaryBlueColor }" 
+                        <Border Background="{StaticResource listItemBackgroundColor }"
+                                    BorderBrush="{StaticResource PrimaryBlueColor }"
                         BorderThickness="2"
                         Height=" 30"
                         Width="700"
@@ -28,11 +28,11 @@
                                     <ColumnDefinition Width ="1*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column ="0"
-                            Content="aylin golchin"
+                            Content="{Binding Path=fullName}"
                             FontSize="12"
                                Margin="10,0,0,0"/>
                                 <Label Grid.Column="1"
-                              Content="09123234587"
+                              Content="{Binding Path=phoneNumber}"
                               FontSize="12"
                                Margin="10,0,0,0"/>
                                 <Label Grid.Column="2"
@@ -41,7 +41,7 @@
                                 <Label Grid.Column="3"
                                FontSize="14"
                                FontWeight ="Bold" 
-                               Content="docktor"
+                               Content="{Binding Path=jobTitle}"
                                Margin="10,0,0,0"/>
 
                             </Grid>

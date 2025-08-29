@@ -15,8 +15,8 @@
                 <Grid Background="Azure"  >
                     <ListBox >
                         <ListBoxItem >
-                            <Border Background="{ StaticResource screenBackgroundColor }"
-                     BorderBrush="{StaticResource PrimaryBlueColor }" 
+                            <Border  Background="{StaticResource listItemBackgroundColor }"
+                                    BorderBrush="{StaticResource PrimaryBlueColor }"
                      BorderThickness="2"
                      Height=" 30"
                      Width="700"
@@ -26,7 +26,7 @@
                                         <ColumnDefinition Width="1*"/>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column ="0"
-                         Content="injections"
+                         Content="{Binding Path=type}"
                                 FontSize="14"
                                 FontWeight="Bold"
                                 Margin="20,0,0,0"/>

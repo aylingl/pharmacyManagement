@@ -15,8 +15,8 @@
                 <Grid Background="AliceBlue"    >
                     <ListBox >
                         <ListBoxItem >
-                            <Border Background="{ StaticResource screenBackgroundColor }"
-                    BorderBrush="{StaticResource PrimaryBlueColor }" 
+                            <Border  Background="{StaticResource listItemBackgroundColor }"
+                                    BorderBrush="{StaticResource PrimaryBlueColor }" 
                     BorderThickness="2"
                     Height=" 30"
                     Width="700"
@@ -27,9 +27,9 @@
                                         <ColumnDefinition Width="5*"/>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column ="0"
-                        Content="aylar"/>
+                        Content="{Binding Path=type}"/>
                                     <Label Grid.Column="1"
-                        Content="09123239765"
+                        Content="{Binding Path=phoneNumber}"
                                Margin="19,0,0,0"
                                FontWeight="Bold" />
                                 </Grid>

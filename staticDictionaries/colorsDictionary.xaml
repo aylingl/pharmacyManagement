@@ -13,4 +13,6 @@
     <SolidColorBrush x:Key="menuButtonscolorMHover">#699EC3</SolidColorBrush>
     <SolidColorBrush x:Key="screenBackgroundColor">#CCE1E6</SolidColorBrush>
     <SolidColorBrush x:Key="screenBorderColor">#36616C</SolidColorBrush>
+    <SolidColorBrush x:Key="listItemBackgroundColor">#EDF3F8</SolidColorBrush>
+    <SolidColorBrush x:Key="listItemBackgroundColorMHover">#8AB3D0</SolidColorBrush>
 </ResourceDictionary>

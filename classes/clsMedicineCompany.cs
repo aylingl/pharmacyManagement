@@ -9,8 +9,8 @@ namespace pharmacyManagement.classes
 {
     public class clsMedicinecompany
     {
-        public int id;
-        public string name;
+        public int id { get; set; }
+        public string name { get; set; }
         /// <summary>
         /// this is my constructor, please fill all parameters...
         /// 

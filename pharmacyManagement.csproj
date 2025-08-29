@@ -9,11 +9,41 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\addBtnImg.png" />
+    <None Remove="images\companyBtnImg.png" />
+    <None Remove="images\customer.png" />
+    <None Remove="images\customerBtnImg.png" />
+    <None Remove="images\delete-295.png" />
+    <None Remove="images\deleteBtnImg.png" />
+    <None Remove="images\edit.png" />
+    <None Remove="images\editBtnImg.png" />
+    <None Remove="images\medicineBtnImg.png" />
+    <None Remove="images\medicineTypeBtnImg - Copy.png" />
+    <None Remove="images\users.png" />
+    <None Remove="images\usersbtnImg.png" />
+    <None Remove="images\visitorBtnImge.png" />
+    <None Remove="images\visitorTypeMedBtnImg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="images\" />
+    <Resource Include="images\addBtnImg.png" />
+    <Resource Include="images\companyBtnImg.png" />
+    <Resource Include="images\customer.png" />
+    <Resource Include="images\customerBtnImg.png" />
+    <Resource Include="images\delete-295.png" />
+    <Resource Include="images\deleteBtnImg.png" />
+    <Resource Include="images\edit.png" />
+    <Resource Include="images\editBtnImg.png" />
+    <Resource Include="images\medicineBtnImg.png" />
+    <Resource Include="images\medicineTypeBtnImg - Copy.png" />
+    <Resource Include="images\users.png" />
+    <Resource Include="images\usersbtnImg.png" />
+    <Resource Include="images\visitorBtnImge.png" />
+    <Resource Include="images\visitorTypeMedBtnImg.png" />
   </ItemGroup>
 
 </Project>

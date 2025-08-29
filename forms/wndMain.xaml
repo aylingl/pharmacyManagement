@@ -8,64 +8,10 @@
         Title="مدیریت داروخانه" 
         Height="450" 
         Width="800"
-        Loaded="window_loaded">
+        Loaded="window_loaded"
+        WindowState="Maximized" >
     
-    <!--
-    <Grid FlowDirection="RightToLeft">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        
-        <Grid Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="60"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Button Width="150"
-                    Height="50"
-                    Grid.Row="1"
-                    Click="btn1_click">
-                <Button.Template>
-                    <ControlTemplate>
-                        <Border BorderBrush="Red"
-                                BorderThickness="2"
-                                Background="Cyan"
-                                CornerRadius="10">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50"/>
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Image Width="30"
-                                        Height="30"
-                                        Grid.Column="0"
-                                        Source="/images/users.png"
-                                        VerticalAlignment="Center" 
-                                        HorizontalAlignment="Center"  />
-                                <Label Grid.Column="1"
-                                        Content="کاربران"
-                                        VerticalAlignment="Center" 
-                                        HorizontalAlignment="Left"
-                                        FontSize="16"/>
-
-                            </Grid>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-            <Label Content="aylin"
-                   Grid.Row="2"/>
-        </Grid>
-
-        
-        <Grid Grid.Column="1" Background="Yellow"></Grid>
-    </Grid>
-    -->
-
+   
 
     <Grid  FlowDirection="RightToLeft" >
         <Grid.RowDefinitions>
@@ -139,36 +85,42 @@
                     </Grid.RowDefinitions>
                     <Button  Grid.Row="0"
                              Content="مشتریان"
-                             Tag= "/images/users.png" 
+                             Tag= "/images/customerBtnImg.png" 
                              Template="{StaticResource tmpltMenuBttm}"
-                             Click="customersMenuClicked"/>
+                             Click="customersMenuClicked"
+                             
+                             />
                    
                     <Button Content="کاربران"
                             Grid.Row="1"
-                            Tag= "/images/users.png"
+                            Tag= "/images/usersbtnImg.png"
                             Template="{StaticResource tmpltMenuBttm }"
                             Click="usersMenuClicked"/>
                     <Button Grid.Row ="2"
                             Content="بازاریاب ها"
                             Template="{StaticResource tmpltMenuBttm}"
                             Click="visitorMenuClicked"
-                            />
+                             Tag= "/images/visitorBtnImge.png"/>
                     <Button Grid.Row ="3"
                             Content="شرکت ها"
                             Template="{StaticResource tmpltMenuBttm}"
-                            Click="medicineCompaniesMenuClicked"/>
+                            Click="medicineCompaniesMenuClicked"
+                             Tag= "/images/companyBtnImg.png"/>
                     <Button Grid.Row ="4"
                             Content="دارو ها"
                              Template="{StaticResource tmpltMenuBttm}"
-                            Click="medicineMenuClicked"/>
+                            Click="medicineMenuClicked"
+                             Tag= "/images/medicineBtnImg.png"/>
                     <Button Grid.Row ="5"
                               Content="نوع دارو ها"                      
                               Template="{StaticResource tmpltMenuBttm}"
-                            Click="medicineTypeMenuClicked"/>
+                            Click="medicineTypeMenuClicked"
+                               Tag= "/images/medicineTypeBtnImg.png"/>
                     <Button Grid.Row ="5"
                               Content="زمینه فعالیت بازاریاب" 
                               Template="{StaticResource tmpltMenuBttm}"
-                            Click="visitorTypeMedicineMenuClicked"/>
+                            Click="visitorTypeMedicineMenuClicked"
+                             Tag= "/images/visitorTypeMedBtnImg.png"/>
 
                 </Grid> 
             </Border>
