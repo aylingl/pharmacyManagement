@@ -61,4 +61,22 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
+
+    <ControlTemplate TargetType="TextBox"
+                     x:Key="tmpTxt1">
+
+        <Border  CornerRadius="12"
+              Background="PowderBlue" 
+              Margin="20,10"
+              >
+            <TextBox Background ="Transparent"
+                  BorderBrush="Transparent"
+                  Foreground="Black" 
+                 FontSize="16"
+                 
+                  Text="{Binding Text , Mode=TwoWay,RelativeSource ={RelativeSource TemplatedParent}}"/>
+
+        </Border>
+
+    </ControlTemplate>
 </ResourceDictionary>

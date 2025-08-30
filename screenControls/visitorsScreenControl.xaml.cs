@@ -53,5 +53,20 @@ namespace pharmacyManagement.screenControls
                 /// comment for git
             }
         }
+
+        private void btnDelete_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEdit_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

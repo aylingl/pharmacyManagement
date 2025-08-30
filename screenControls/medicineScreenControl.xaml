@@ -15,18 +15,23 @@
                     BorderBrush="{StaticResource PrimaryBlueColor }"
                     x:Name="brd2"
                     BorderThickness="2"
-                    >
-
-                            <Grid Width="500"
+                    Width="1000">
+                <Grid  >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="120"/>
+                    </Grid.ColumnDefinitions>
+                    
+                            <Grid Grid.Column="0"
         >
                     <Grid.RowDefinitions >
                         <RowDefinition  />
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <Grid  Grid.Row="0"
-              >
-                        <Grid.ColumnDefinitions  >
+                        <Grid  Grid.Row="0">
+
+                            <Grid.ColumnDefinitions  >
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="1*"/>
@@ -43,20 +48,61 @@
 
                     <Grid Grid.Row="1" >
                         <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="40"
+                                             />
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <Label  Grid.Column ="0"
+                                  Content="{Binding  Path= companyName}"
+                                  Margin="10,0,0,0"/>
+                        <Label   Grid.Column ="1"
+                                 FlowDirection="LeftToRight" 
+                                 Margin="0,0,10,0"
+                                 Content="{Binding Path=expirationDate}"/>
+
+                           
+                           
+                        </Grid>
+
+                </Grid>
+                    <Grid  Grid.Column="1">
+                        <Grid.ColumnDefinitions >
                             <ColumnDefinition />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <Label  Grid.Column ="0"
-                  Content="{Binding  Path= companyName}"
-                  Margin="10,0,0,0"/>
-                        <Label Grid.Column ="1"
-                 FlowDirection="LeftToRight" 
-                 Margin="0,0,10,0"
-                 Content="{Binding Path=expirationDate}"/>
 
+                        <Button  Grid.Column="0"
+                                 Cursor="Hand" 
+                                 Click="btnEdit_click"
+                                 >
+                            <Button.Template >
+                                <ControlTemplate >
+                                    <Image
+                                            Source="/images/editBtnImg.png" 
+                                            Width="25"
+                                            VerticalAlignment="Center"
+                                        HorizontalAlignment="Center" />
 
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <Button  Grid.Column="1"
+                                  Cursor="Hand" 
+                                  Click="btnDelete_click"
+                                  >
+                            <Button.Template >
+                                <ControlTemplate >
+                                    <Image 
+                                            Source="/images/deleteBtnImg.png"
+                                            Width="25"
+                                            HorizontalAlignment="Left" 
+                                       VerticalAlignment="Center"  />
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
                     </Grid>
-
                 </Grid>
             </Border>
 
@@ -74,6 +120,24 @@
                   Background="Transparent" 
                   BorderBrush="Transparent ">
          </ListBox>
+        <Button Content="mfjnfdj" 
+         Width="50"
+         Height="50"
+         HorizontalAlignment="Right" 
+         VerticalAlignment="Bottom" 
+         Margin="0,0,30,30"
+         Click="btnAdd_click"
+         Cursor="Hand" >
+            <Button.Template >
+                <ControlTemplate >
+                    <Image Source="/images/addBtnImg.png" 
+                    Width="45"
+                    />
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
     </Grid>
 
 </UserControl>

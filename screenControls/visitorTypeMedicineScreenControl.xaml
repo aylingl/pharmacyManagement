@@ -17,14 +17,16 @@
                         <ListBoxItem >
                             <Border  Background="{StaticResource listItemBackgroundColor }"
                                     BorderBrush="{StaticResource PrimaryBlueColor }" 
-                    BorderThickness="2"
-                    Height=" 30"
-                    Width="700"
-                    CornerRadius="12">
+                                    BorderThickness="2"
+                                    Height=" 30"
+                                    Width="700"
+                                    CornerRadius="12">
                                 <Grid >
                                     <Grid.ColumnDefinitions >
                                         <ColumnDefinition Width="2*"/>
                                         <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="50"/>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column ="0"
                         Content="{Binding Path=type}"/>
@@ -32,6 +34,34 @@
                         Content="{Binding Path=phoneNumber}"
                                Margin="19,0,0,0"
                                FontWeight="Bold" />
+                                    <Button  Grid.Column="2"
+                                              Cursor="Hand"
+                                              Click="btnEdit_click">
+                                        <Button.Template >
+                                            <ControlTemplate >
+                                                <Image
+                                                         Source="/images/editBtnImg.png" 
+                                                         Width="25"
+                                                         VerticalAlignment="Center" 
+                                                         />
+
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                    <Button Grid.Column="3"
+                                             Cursor="Hand" 
+                                             Click="btnDelete_click">
+                                        <Button.Template >
+                                            <ControlTemplate >
+                                                <Image 
+                                                         Source="/images/deleteBtnImg.png"
+                                                         Width="25"
+                                                         HorizontalAlignment="Left" />
+
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+
                                 </Grid>
                             </Border>
                         </ListBoxItem>

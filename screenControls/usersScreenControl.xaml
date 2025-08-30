@@ -26,6 +26,8 @@
                                     <ColumnDefinition Width="2*"/>
                                     <ColumnDefinition Width="3*"/>
                                     <ColumnDefinition Width ="1*"/>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="50"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column ="0"
                             Content="{Binding Path=fullName}"
@@ -43,47 +45,40 @@
                                FontWeight ="Bold" 
                                Content="{Binding Path=jobTitle}"
                                Margin="10,0,0,0"/>
+                                <Button  Grid.Column="4"
+                                          Cursor="Hand"
+                                          Click="btnEdit_click">
+                                    <Button.Template >
+                                        <ControlTemplate >
+                                            <Image
+                                                     Source="/images/editBtnImg.png" 
+                                                     Width="25"
+                                                     VerticalAlignment="Center" 
+                                                     /> 
+
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                                <Button Grid.Column="5"
+                                         Cursor="Hand" 
+                                         Click="btnDelete_click">
+                                    <Button.Template >
+                                        <ControlTemplate >
+                                            <Image 
+                                                     Source="/images/deleteBtnImg.png"
+                                                     Width="25"
+                                                     HorizontalAlignment="Left" />
+
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
 
                             </Grid>
                         </Border>
 
                     </ListBoxItem>
-                    <ListBoxItem >
-                        <Border Background="{ StaticResource screenBackgroundColor }"
-            BorderBrush="{StaticResource PrimaryBlueColor }" 
-            BorderThickness="2"
-            Height=" 30"
-            Width="700"
-            CornerRadius="12">
-                            <Grid >
-                                <Grid.ColumnDefinitions >
-                                    <ColumnDefinition Width="1*"/>
-                                    <ColumnDefinition Width="2*"/>
-                                    <ColumnDefinition Width="3*"/>
-                                    <ColumnDefinition Width ="1*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Column ="0"
-                Content="aylin golchin"
-                FontSize="12"
-                   Margin="10,0,0,0"/>
-                                <Label Grid.Column="1"
-                  Content="09123234587"
-                  FontSize="12"
-                   Margin="10,0,0,0"/>
-                                <Label Grid.Column="2"
-                Margin="100,0,0,0"
-                Content="fjjfjvvvg"/>
-                                <Label Grid.Column="3"
-                   FontSize="14"
-                   FontWeight ="Bold" 
-                   Content="docktor"
-                   Margin="10,0,0,0"/>
-
-                            </Grid>
-                        </Border>
-
-                    </ListBoxItem>
-                </ListBox>
+                    </ListBox>
 
             </Grid>
         </DataTemplate>
@@ -94,6 +89,24 @@
                   Background="Transparent" 
                   BorderBrush="Transparent ">
         </ListBox>
+        <Button
+         Width="50"
+         Height="50"
+         HorizontalAlignment="Right" 
+         VerticalAlignment="Bottom" 
+         Margin="0,0,30,30"
+         Click="btnAdd_click"
+         Cursor="Hand" >
+            <Button.Template >
+                <ControlTemplate >
+                    <Image Source="/images/addBtnImg.png" 
+                    Width="45"
+                    />
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
     </Grid>
 
 </UserControl>

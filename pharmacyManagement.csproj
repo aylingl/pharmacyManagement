@@ -19,6 +19,7 @@
     <None Remove="images\editBtnImg.png" />
     <None Remove="images\medicineBtnImg.png" />
     <None Remove="images\medicineTypeBtnImg - Copy.png" />
+    <None Remove="images\medicineTypeBtnImg.png" />
     <None Remove="images\users.png" />
     <None Remove="images\usersbtnImg.png" />
     <None Remove="images\visitorBtnImge.png" />
@@ -40,6 +41,7 @@
     <Resource Include="images\editBtnImg.png" />
     <Resource Include="images\medicineBtnImg.png" />
     <Resource Include="images\medicineTypeBtnImg - Copy.png" />
+    <Resource Include="images\medicineTypeBtnImg.png" />
     <Resource Include="images\users.png" />
     <Resource Include="images\usersbtnImg.png" />
     <Resource Include="images\visitorBtnImge.png" />

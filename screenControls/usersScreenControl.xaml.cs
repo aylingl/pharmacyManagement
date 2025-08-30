@@ -52,5 +52,20 @@ namespace pharmacyManagement.screenControls
             DataContext = this;
             lstUsersView .ItemsSource = lstUsers ;
         }
+
+        private void btnEdit_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

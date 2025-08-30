@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\App.xaml
-11710895904
+121069315396
 
-26-1244784242
+271554605644
 2061318810043
-forms\wndMain.xaml;forms\wndPrctice.xaml;screenControls\customersScreenControl.xaml;screenControls\medicineCompaniesScreenControl.xaml;screenControls\medicineScreenControl.xaml;screenControls\medicineTypesScreenControl.xaml;screenControls\usersScreenControl.xaml;screenControls\visitorsScreenControl.xaml;screenControls\visitorTypeMedicineScreenControl.xaml;staticDictionaries\colorsDictionary.xaml;staticDictionaries\templateDictionary.xaml;
+forms\wndEditCustomer.xaml;forms\wndMain.xaml;forms\wndPrctice.xaml;screenControls\customersScreenControl.xaml;screenControls\medicineCompaniesScreenControl.xaml;screenControls\medicineScreenControl.xaml;screenControls\medicineTypesScreenControl.xaml;screenControls\usersScreenControl.xaml;screenControls\visitorsScreenControl.xaml;screenControls\visitorTypeMedicineScreenControl.xaml;staticDictionaries\colorsDictionary.xaml;staticDictionaries\templateDictionary.xaml;
 
 False
 

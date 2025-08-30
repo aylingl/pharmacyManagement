@@ -56,3 +56,5 @@ D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\scr
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\screenControls\medicineCompaniesScreenControl.baml
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\screenControls\medicineTypesScreenControl.baml
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\screenControls\usersScreenControl.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditCustomer.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditCustomer.baml

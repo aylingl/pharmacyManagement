@@ -1,4 +1,5 @@
 ﻿using pharmacyManagement.classes;
+using pharmacyManagement.forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -66,7 +67,8 @@ namespace pharmacyManagement.screenControls
 
         private void btnAdd_click(object sender, RoutedEventArgs e)
         {
-
+            wndEditCustomer wnd1 = new wndEditCustomer();
+            wnd1.ShowDialog();
         }
     }
 }

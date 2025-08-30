@@ -50,5 +50,20 @@ namespace pharmacyManagement.screenControls
             DataContext = this;
             lstMedicineTypeView .ItemsSource = lstMedicineType ;
         }
+
+        private void btnEdit_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

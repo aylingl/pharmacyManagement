@@ -23,13 +23,40 @@
                      CornerRadius="12">
                                 <Grid >
                                     <Grid.ColumnDefinitions >
-                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="4*"
+                                                          />
+                                        <ColumnDefinition Width="50" />
+                                        <ColumnDefinition Width="40"/>
                                     </Grid.ColumnDefinitions>
                                     <Label Grid.Column ="0"
                          Content="{Binding Path=type}"
                                 FontSize="14"
                                 FontWeight="Bold"
                                 Margin="20,0,0,0"/>
+                                    <Button  Grid.Column="1"
+                                                 Cursor="Hand"
+                                                 Click="btnEdit_click">
+                                        <Button.Template >
+                                            <ControlTemplate >
+                                                <Image 
+                                                    Source="/images/editBtnImg.png" 
+                                                    Width="25"
+                                                    VerticalAlignment="Center" />
+                                                </ControlTemplate> 
+                                        </Button.Template>
+                                    </Button>
+                                    <Button  Grid.Column="2"
+                                     Cursor="Hand"
+                                     Click="btnDelete_click">
+                                        
+                                        <Button.Template >
+                                            <ControlTemplate >
+                                                <Image Source="/images/deleteBtnImg.png"  
+                                                       Width="25"
+                                                      HorizontalAlignment="Left"   />
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
                                 </Grid>
                             </Border>
                             
@@ -50,6 +77,24 @@
                   Background="Transparent" 
                   BorderBrush="Transparent ">
         </ListBox>
+        <Button Content="mfjnfdj" 
+         Width="50"
+         Height="50"
+         HorizontalAlignment="Right" 
+         VerticalAlignment="Bottom" 
+         Margin="0,0,30,30"
+         Click="btnAdd_click"
+         Cursor="Hand" >
+            <Button.Template >
+                <ControlTemplate >
+                    <Image Source="/images/addBtnImg.png" 
+                    Width="45"
+                    />
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
     </Grid>
     
 </UserControl>

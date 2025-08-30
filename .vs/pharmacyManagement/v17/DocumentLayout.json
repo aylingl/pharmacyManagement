@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\customersscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:screencontrols\\customersscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\forms\\wndeditcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:forms\\wndeditcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\customersscreencontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:screencontrols\\customersscreencontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\staticdictionaries\\templatedictionary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:staticdictionaries\\templatedictionary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\usersscreencontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:screencontrols\\usersscreencontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\visitorsscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -21,6 +25,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\medicinetypesscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:screencontrols\\medicinetypesscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\medicinecompaniesscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:screencontrols\\medicinecompaniesscreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\screencontrols\\visitortypemedicinescreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:screencontrols\\visitortypemedicinescreencontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\classes\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|solutionrelative:classes\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BE62722-3A37-44E4-8AFE-A7D8A05F2D34}|pharmacyManagement.csproj|d:\\programing\\csharp\\pharmacywpf\\pharmacymanagement\\forms\\wndmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -39,31 +55,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "customersScreenControl.xaml.cs",
-              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\customersScreenControl.xaml.cs",
-              "RelativeDocumentMoniker": "screenControls\\customersScreenControl.xaml.cs",
-              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\customersScreenControl.xaml.cs",
-              "RelativeToolTip": "screenControls\\customersScreenControl.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAASwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T06:27:29.129Z",
+              "Title": "templateDictionary.xaml",
+              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\staticDictionaries\\templateDictionary.xaml",
+              "RelativeDocumentMoniker": "staticDictionaries\\templateDictionary.xaml",
+              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\staticDictionaries\\templateDictionary.xaml",
+              "RelativeToolTip": "staticDictionaries\\templateDictionary.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-30T06:58:51.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "customersScreenControl.xaml",
-              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\customersScreenControl.xaml",
-              "RelativeDocumentMoniker": "screenControls\\customersScreenControl.xaml",
-              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\customersScreenControl.xaml",
-              "RelativeToolTip": "screenControls\\customersScreenControl.xaml",
+              "Title": "wndEditCustomer.xaml",
+              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\forms\\wndEditCustomer.xaml",
+              "RelativeDocumentMoniker": "forms\\wndEditCustomer.xaml",
+              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\forms\\wndEditCustomer.xaml",
+              "RelativeToolTip": "forms\\wndEditCustomer.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-29T06:00:14.886Z",
+              "WhenOpened": "2025-08-30T06:45:51.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "usersScreenControl.xaml.cs",
+              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\usersScreenControl.xaml.cs",
+              "RelativeDocumentMoniker": "screenControls\\usersScreenControl.xaml.cs",
+              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\usersScreenControl.xaml.cs",
+              "RelativeToolTip": "screenControls\\usersScreenControl.xaml.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T12:28:03.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "visitorTypeMedicineScreenControl.xaml",
+              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\visitorTypeMedicineScreenControl.xaml",
+              "RelativeDocumentMoniker": "screenControls\\visitorTypeMedicineScreenControl.xaml",
+              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\visitorTypeMedicineScreenControl.xaml",
+              "RelativeToolTip": "screenControls\\visitorTypeMedicineScreenControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-29T12:19:03.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "clsUser.cs",
+              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\classes\\clsUser.cs",
+              "RelativeDocumentMoniker": "classes\\clsUser.cs",
+              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\classes\\clsUser.cs",
+              "RelativeToolTip": "classes\\clsUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T12:04:28.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "medicineCompaniesScreenControl.xaml",
+              "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\medicineCompaniesScreenControl.xaml",
+              "RelativeDocumentMoniker": "screenControls\\medicineCompaniesScreenControl.xaml",
+              "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\medicineCompaniesScreenControl.xaml",
+              "RelativeToolTip": "screenControls\\medicineCompaniesScreenControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-29T07:13:31.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "visitorsScreenControl.xaml",
               "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\visitorsScreenControl.xaml",
               "RelativeDocumentMoniker": "screenControls\\visitorsScreenControl.xaml",
@@ -75,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "usersScreenControl.xaml",
               "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\usersScreenControl.xaml",
               "RelativeDocumentMoniker": "screenControls\\usersScreenControl.xaml",
@@ -87,27 +149,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "medicineTypesScreenControl.xaml",
               "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\medicineTypesScreenControl.xaml",
               "RelativeDocumentMoniker": "screenControls\\medicineTypesScreenControl.xaml",
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\screenControls\\medicineTypesScreenControl.xaml",
               "RelativeToolTip": "screenControls\\medicineTypesScreenControl.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-28T08:45:32.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T08:45:32.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "wndMain.xaml",
               "DocumentMoniker": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\forms\\wndMain.xaml",
               "RelativeDocumentMoniker": "forms\\wndMain.xaml",
               "ToolTip": "D:\\programing\\csharp\\pharmacyWpf\\pharmacyManagement\\forms\\wndMain.xaml",
               "RelativeToolTip": "forms\\wndMain.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-08-28T08:01:59.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T08:01:59.046Z"
             }
           ]
         }

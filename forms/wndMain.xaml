@@ -82,6 +82,7 @@
                         <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
+                        <RowDefinition />
                     </Grid.RowDefinitions>
                     <Button  Grid.Row="0"
                              Content="مشتریان"
@@ -112,15 +113,15 @@
                             Click="medicineMenuClicked"
                              Tag= "/images/medicineBtnImg.png"/>
                     <Button Grid.Row ="5"
-                              Content="نوع دارو ها"                      
-                              Template="{StaticResource tmpltMenuBttm}"
-                            Click="medicineTypeMenuClicked"
-                               Tag= "/images/medicineTypeBtnImg.png"/>
-                    <Button Grid.Row ="5"
                               Content="زمینه فعالیت بازاریاب" 
                               Template="{StaticResource tmpltMenuBttm}"
                             Click="visitorTypeMedicineMenuClicked"
                              Tag= "/images/visitorTypeMedBtnImg.png"/>
+                    <Button Grid.Row ="6"
+                                   Content="نوع دارو ها"                      
+                                   Template="{StaticResource tmpltMenuBttm}"
+                                 Click="medicineTypeMenuClicked"
+                                    Tag= "/images/medicineTypeBtnImg.png"/>
 
                 </Grid> 
             </Border>
