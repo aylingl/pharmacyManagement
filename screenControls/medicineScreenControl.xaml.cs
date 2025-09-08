@@ -1,4 +1,5 @@
 ﻿using pharmacyManagement.classes;
+using pharmacyManagement.forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -27,12 +28,11 @@ namespace pharmacyManagement.screenControls
         {
             InitializeComponent();
         }
-
         private void control_Loaded(object sender, RoutedEventArgs e)
         {
             DataContext = this;
             fillLst();
-            lstMedicineView.ItemsSource = lstMedicines;
+           
         }
         ///////////////////////////////////metodie ke estfde mikonim
         private void fillLst()
@@ -62,21 +62,56 @@ namespace pharmacyManagement.screenControls
                 lstMedicines .Add(d1 );
 
             }
+            lstMedicineView .ItemsSource = lstMedicines ;
+            lstMedicineView .Items.Refresh();
+
         }
 
         private void btnEdit_click(object sender, RoutedEventArgs e)
         {
+            //=============================== get active row data
+            Button btn44 = (Button) sender;
+            clsMedicine medicine44 = (clsMedicine) btn44.DataContext;
 
+            //============================== call & open ediding window
+            wndEditMedicine wnd1 = new wndEditMedicine(medicine44);
+            wnd1.ShowDialog();
+            //following codes run after dialog closed.
+            fillLst();
         }
+        
 
         private void btnDelete_click(object sender, RoutedEventArgs e)
         {
 
+            Button btnDeletMed = (Button)sender;
+            clsMedicine  medicine1 = (clsMedicine )btnDeletMed .DataContext;
+
+
+            string strMessage = $"ایا از حذف دارو با نام {medicine1.name } مطمئن هستید؟";
+            string strCaption = "حذف";
+            MessageBoxResult answer = MessageBox.Show(strMessage, strCaption, MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            if (answer == MessageBoxResult.No)
+            {
+                return;
+            }
+            clsResultDb result1 = clsMedicine .deleteFromDb(medicine1.id);
+
+            if (result1.result == true)
+            {
+                fillLst();
+            }
+            else
+            {
+                MessageBox.Show(result1.errMsgIfExist);
+            }
         }
 
         private void btnAdd_click(object sender, RoutedEventArgs e)
         {
-
+            wndEditMedicine  wnd1 = new wndEditMedicine ();
+            wnd1.ShowDialog();
+            fillLst();
         }
     }
 }

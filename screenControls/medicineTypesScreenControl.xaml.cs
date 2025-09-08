@@ -1,4 +1,5 @@
 ﻿using pharmacyManagement.classes;
+using pharmacyManagement.forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -17,6 +18,8 @@ using System.Windows.Shapes;
 
 namespace pharmacyManagement.screenControls
 {
+     
+
     /// <summary>
     /// Interaction logic for medicineTypesScreenControl.xaml
     /// </summary>
@@ -42,6 +45,9 @@ namespace pharmacyManagement.screenControls
                 lstMedicineType.Add(d1);
 
             }
+            lstMedicineTypeView .ItemsSource = lstMedicineType ;
+            lstMedicineTypeView .Items.Refresh();
+
         }
 
         private void control_Loaded(object sender, RoutedEventArgs e)
@@ -53,17 +59,47 @@ namespace pharmacyManagement.screenControls
 
         private void btnEdit_click(object sender, RoutedEventArgs e)
         {
-
+            
+            Button btnMediciineType = (Button)sender;
+            clsMedicineType  medicineType = (clsMedicineType )btnMediciineType .DataContext;
+            wndEditMedicineType  wnd1 = new wndEditMedicineType (medicineType );
+            wnd1.ShowDialog();
+            fillLst();
         }
 
         private void btnDelete_click(object sender, RoutedEventArgs e)
         {
 
+            Button btnDeletMedType = (Button)sender;
+            clsMedicineType  medtype1 = (clsMedicineType )btnDeletMedType .DataContext;
+
+
+            string strMessage = $"ایا از حذف نوع دارو با نام {medtype1.type } مطمئن هستید؟";
+            string strCaption = "حذف";
+            MessageBoxResult answer = MessageBox.Show(strMessage, strCaption, MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            if (answer == MessageBoxResult.No)
+            {
+                return;
+            }
+            clsResultDb result1 = clsMedicineType .deleteFromDb(medtype1 .id);
+
+            if (result1.result == true)
+            {
+                fillLst();
+            }
+            else
+            {
+                MessageBox.Show(result1.errMsgIfExist);
+            }
         }
 
         private void btnAdd_click(object sender, RoutedEventArgs e)
         {
-
+            wndEditMedicineType  wnd1 = new wndEditMedicineType ();
+            wnd1.ShowDialog();
+            fillLst();
         }
+
+      
     }
 }

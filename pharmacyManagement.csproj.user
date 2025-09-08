@@ -5,6 +5,27 @@
     <Compile Update="forms\wndEditCustomer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="forms\wndEditMedicine.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="forms\wndEditmedicineCompany.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="forms\wndEditMedicineType.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="forms\wndEditUsers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="forms\wndEditVisitors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="forms\wndEditVisitorTypeMedicine.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="forms\wndLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="forms\wndMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

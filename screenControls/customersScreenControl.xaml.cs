@@ -46,29 +46,64 @@ namespace pharmacyManagement.screenControls
                 lstCustumer .Add(d1);
 
             }
+            lstCustomerView.ItemsSource = lstCustumer;
+            lstCustomerView.Items.Refresh();
+
         }
 
         private void control_Loaded(object sender, RoutedEventArgs e)
         {
-            fillLst();
             DataContext = this;
-            lstCustomerView.ItemsSource = lstCustumer;
+            fillLst();
+            
         }
 
         private void btnDelete_click(object sender, RoutedEventArgs e)
         {
-            int hgh = 9;
+            
+            Button btnDeletCustomer = (Button)sender;
+            clsCustumer customer1 = (clsCustumer )btnDeletCustomer .DataContext;
+            //================================= customer info fetched.
+            string strMessage = $"ایا از حذف مشتری به نام {customer1.fullName } مطمئن هستید؟";
+            string strCaption = "حذف";
+            MessageBoxResult answer = MessageBox.Show(strMessage, strCaption, MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            if(answer == MessageBoxResult.No  )
+            {
+                return;
+            }
+          
+
+            //================================= start deleting from db
+            clsResultDb result1= clsCustumer.deleteFromDb(customer1.id);
+            
+            if (result1.result  == true )
+            {
+                fillLst();
+            }
+            else
+            {
+                MessageBox.Show(result1.errMsgIfExist);
+            }
         }
 
         private void btnEdit_click(object sender, RoutedEventArgs e)
         {
+            Button btnSender = (Button) sender;
+            clsCustumer editingCustomer = (clsCustumer) btnSender.DataContext;
 
+            wndEditCustomer wnd1 = new wndEditCustomer(editingCustomer);
+            wnd1.ShowDialog();
+            //==== following commands run after dialog closed;
+            fillLst();
+
+            int ghgh = 8;
         }
 
         private void btnAdd_click(object sender, RoutedEventArgs e)
         {
             wndEditCustomer wnd1 = new wndEditCustomer();
             wnd1.ShowDialog();
+            fillLst ();
         }
     }
 }

@@ -12,13 +12,15 @@
     <UserControl.Resources >
         <DataTemplate  x:Key="dtTemplate1">
             <Grid>
-                <Grid Background="AliceBlue"    >
-                    <ListBox >
-                        <ListBoxItem >
+                <Grid Background="Transparent"     >
+                    
+                        <ListBoxItem Background="Transparent" 
+                                      BorderBrush="Transparent" 
+                                      Foreground="Transparent">
                             <Border  Background="{StaticResource listItemBackgroundColor }"
                                     BorderBrush="{StaticResource PrimaryBlueColor }" 
                                     BorderThickness="2"
-                                    Height=" 30"
+                                    Height="40"
                                     Width="700"
                                     CornerRadius="12">
                                 <Grid >
@@ -65,7 +67,7 @@
                                 </Grid>
                             </Border>
                         </ListBoxItem>
-                    </ListBox>
+    
                 </Grid>
             </Grid>
         </DataTemplate>
@@ -76,6 +78,21 @@
                   Background="Transparent" 
                   BorderBrush="Transparent ">
         </ListBox>
+        <Button  
+                 Width="50"
+                 Height="50"
+                 HorizontalAlignment="Right" 
+                 VerticalAlignment="Bottom" 
+                 Margin="0,0,30,30"
+                 Click="btnAdd_click"
+                 Cursor="Hand" >
+            <Button.Template >
+                <ControlTemplate >
+                    <Image Source="/images/addBtnImg.png" 
+                            Width="45" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
     
 </UserControl>

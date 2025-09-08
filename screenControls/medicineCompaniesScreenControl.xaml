@@ -9,16 +9,19 @@
              Loaded="control_Loaded">
 
     <UserControl.Resources >
-        <DataTemplate x:Key="dtTemplate1">
-            <Grid>
-                <Grid Background="Azure"  >
-                    
-                        <ListBoxItem >
+        <DataTemplate x:Key="dtTemplate1"
+                      >
+            <Grid  >
+                <Grid  
+                      >
+                    <ListBoxItem  Background="Transparent" 
+                                      BorderBrush="Transparent" 
+                                      Foreground="Transparent" >
                             <Border Background="{StaticResource listItemBackgroundColor }"
                                     BorderBrush="{StaticResource PrimaryBlueColor }"
                                     CornerRadius="12"
                                     Width="1000"
-                                    Height="30"
+                                    Height="40"
                                     BorderThickness="2">
 
                                 <Grid >

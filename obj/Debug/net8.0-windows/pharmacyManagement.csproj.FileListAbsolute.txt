@@ -58,3 +58,17 @@ D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\scr
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\screenControls\usersScreenControl.baml
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditCustomer.g.cs
 D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditCustomer.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditmedicineCompany.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditMedicineType.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditUsers.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditVisitors.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditVisitorTypeMedicine.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditMedicine.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditMedicine.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditmedicineCompany.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditMedicineType.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditUsers.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditVisitors.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndEditVisitorTypeMedicine.baml
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndLogin.g.cs
+D:\programing\csharp\pharmacyWpf\pharmacyManagement\obj\Debug\net8.0-windows\forms\wndLogin.baml

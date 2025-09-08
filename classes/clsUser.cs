@@ -70,7 +70,7 @@ namespace pharmacyManagement.classes
             clsResultDb r2 = clsMySqlHelper.execute(cmdUpdate);
             return r2;
         }
-        /*
+
         public static clsResultCheckUser checkUser(string phoneNumber, string encryptedPass)
         {
             /*
@@ -80,7 +80,15 @@ namespace pharmacyManagement.classes
                 return r1;
            }
             */
-        /*
+            string clearPassAdmin = "123";
+            string encryptedPassAdmin = clsCrypting.SHA256(clearPassAdmin);
+            if (phoneNumber == "admin" && encryptedPass == encryptedPassAdmin )
+            {
+                clsResultCheckUser r5 = new clsResultCheckUser(true, "ادمین");
+                return r5;
+
+            }
+
             string cmdSelect =
              $@"select * 
                 from tblUsers
@@ -88,7 +96,7 @@ namespace pharmacyManagement.classes
                 and encryptedpass = '{encryptedPass}'
              ;";
             DataTable dt2 = clsMySqlHelper.select(cmdSelect);
-
+        
             //=========== old version start
             /*
             if(dt2.Rows.Count > 0)
@@ -99,7 +107,7 @@ namespace pharmacyManagement.classes
             {
                 return false;
             }
-            
+          */  
             //============= old version end
             
             if (dt2.Rows.Count > 0)
@@ -114,6 +122,6 @@ namespace pharmacyManagement.classes
                 return r1;
             }
             
-        */
+        }
     }
 }

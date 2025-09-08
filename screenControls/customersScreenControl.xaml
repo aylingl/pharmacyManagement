@@ -42,12 +42,13 @@
                                Content="{Binding Path= fullName}"
                                Margin="10,0,0,0"
                                        FontWeight="Bold" 
-                                       VerticalAlignment="Center" />
+                                       VerticalAlignment="Center" 
+                                       />
                                
                                 <Label Grid.Column="1"
-                               Margin="50,0,0,0"
-                               Content="{Binding Path= phoneNumber}"
-                               FontWeight="Bold"
+                                        Margin="50,0,0,0"
+                                         Content="{Binding Path= phoneNumber}"
+                                        FontWeight="Bold"
                                        VerticalAlignment="Center" />
                             <Button  Grid.Column="2"
                                      Cursor="Hand"

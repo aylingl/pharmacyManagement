@@ -11,13 +11,17 @@
     <UserControl.Resources >
         <DataTemplate x:Key="dtTemplate1">
 
-            <Grid Background="Azure"  >
-                <ListBox >
-                    <ListBoxItem >
+            <Grid  Background="Transparent" >
+               
+                    <ListBoxItem  Background="Transparent" 
+                                      BorderBrush="Transparent" 
+                                      Foreground="Transparent"
+                                  BorderThickness="0"
+                                  IsSelected="False" >
                         <Border Background="{StaticResource listItemBackgroundColor }"
                                     BorderBrush="{StaticResource PrimaryBlueColor }"
                         BorderThickness="2"
-                        Height=" 30"
+                        Height="40"
                         Width="700"
                         CornerRadius="12">
                             <Grid >
@@ -32,7 +36,8 @@
                                 <Label Grid.Column ="0"
                             Content="{Binding Path=fullName}"
                             FontSize="12"
-                               Margin="10,0,0,0"/>
+                               Margin="10,0,0,0"
+                                       FontWeight="Bold" />
                                 <Label Grid.Column="1"
                               Content="{Binding Path=phoneNumber}"
                               FontSize="12"
@@ -44,7 +49,8 @@
                                FontSize="14"
                                FontWeight ="Bold" 
                                Content="{Binding Path=jobTitle}"
-                               Margin="10,0,0,0"/>
+                               Margin="10,0,0,0"
+                                       />
                                 <Button  Grid.Column="4"
                                           Cursor="Hand"
                                           Click="btnEdit_click">
@@ -78,7 +84,7 @@
                         </Border>
 
                     </ListBoxItem>
-                    </ListBox>
+                    
 
             </Grid>
         </DataTemplate>

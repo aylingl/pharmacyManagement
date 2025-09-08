@@ -8,7 +8,9 @@
         Title="wndEditCustomer" Height="300" Width="300"
         WindowStartupLocation="CenterScreen" 
         WindowStyle="None"
-        Background="Transparent" >
+        Background="Transparent" 
+        AllowsTransparency="True" 
+        Loaded="window_loaded">
    
     
     <Grid Background="Transparent" 
@@ -16,7 +18,7 @@
         <Border BorderBrush="Red" 
                 Background="White"  
                 BorderThickness="2"
-                CornerRadius="12">
+                CornerRadius="12" Height="300" VerticalAlignment="Top">
             <Grid >
                 <Grid.RowDefinitions >
                     <RowDefinition Height="1*"/>
@@ -35,9 +37,9 @@
                 </Grid>
                 <Grid Grid.Row="1"
                       >
-                    <TextBox x:Name="txtFName"
+                    <TextBox x:Name ="txtFName"
                              Template="{StaticResource tmpTxt1 }"
-                             />
+                             Margin="20,0,20,10"/>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Label Content="نام خانوادگی :"
@@ -48,33 +50,39 @@
        >
                     <TextBox x:Name="txtLName"
               Template="{StaticResource tmpTxt1 }"
-              />
+              Margin="20,0,20,10"/>
                 </Grid>
                 <Grid Grid.Row="4">
                     <Label Content="تلفن:"
-            Margin="20,0"/>
+                           Margin="20,0"/>
 
                 </Grid>
                 <Grid Grid.Row="5"
        >
                     <TextBox x:Name="txtPhoneNumber"
               Template="{StaticResource tmpTxt1 }"
-              />
+              Margin="20,0,20,10"/>
                 </Grid>
                 <Grid Grid.Row="6"
                       Margin="20,5">
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition />
+                        <ColumnDefinition Width="10"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Button Grid.Column="0"
-                        Content="ثبت">
+                        Content="ثبت"
+                           Tag="/images/entryBtnForAdd.png"
+                            Template="{StaticResource tmpltEnterBttn }" Height="44" VerticalAlignment="Top"
+                            Click="btnSubmit_click" >
                         
                     </Button>
                     <Button 
-                        Grid.Column="1"
+                        Grid.Column="2"
                         Content="انصراف"
-                          Click="btnCancel_click"  >
+                          Click="btnCancel_click" 
+                        Template="{StaticResource tmpltCancelBttn }" Height="44" VerticalAlignment="Top "
+                        Tag="/images/canceleBtnForCancel.png">
                         
                     </Button>
                 </Grid>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pharmacyManagement.classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,15 @@ namespace pharmacyManagement.forms
         private void window_loaded(object sender, RoutedEventArgs e)
         {
            // labUserFullName.Text = "ایلیییییییییییین گلچیننننننننننن" ;
-            int kjdsfhsdkjf = 0;
+            wndLogin wndLogin1 = new wndLogin ();
+            wndLogin1.ShowDialog();
+            if(clsGlobalVariables.strActiveUserFullName  == null)
+            {
+                this.Close();
+            }
+            labUserFullName .Text = clsGlobalVariables.strActiveUserFullName;
+           
+
         }
 
         private void customersMenuClicked(object sender, RoutedEventArgs e)
@@ -63,6 +72,22 @@ namespace pharmacyManagement.forms
         private void medicineTypeMenuClicked(object sender, RoutedEventArgs e)
         {
             brdMain .Child = new screenControls .medicineTypesScreenControl ();
+        }
+
+        private void userCaption_clicked(object sender, MouseButtonEventArgs e)
+        {
+            if (e .ClickCount == 2 )
+            {
+                wndLogin wnd2 = new wndLogin();
+                wnd2.ShowDialog();
+                if (clsGlobalVariables.strActiveUserFullName == null)
+                {
+                    
+                    this.Close();
+                }
+                labUserFullName.Text = clsGlobalVariables.strActiveUserFullName;
+
+            }
         }
     }
 }

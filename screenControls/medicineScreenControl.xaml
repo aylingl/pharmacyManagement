@@ -15,7 +15,8 @@
                     BorderBrush="{StaticResource PrimaryBlueColor }"
                     x:Name="brd2"
                     BorderThickness="2"
-                    Width="1000">
+                    Width="1000"
+                    >
                 <Grid  >
                     <Grid.ColumnDefinitions >
                         <ColumnDefinition Width="4*"/>
@@ -38,12 +39,14 @@
                             <ColumnDefinition Width ="2*"/>
                         </Grid.ColumnDefinitions>
                         <Label    Grid.Column="0"
-              Content  ="{Binding Path = name}"
-                  Margin="10,0,0,0"/>
+                                  Content  ="{Binding Path = name}"
+                                  Margin="10,0,0,0"
+                                  FontWeight="Bold" />
                         <Label Grid.Column="1"
-                 Content= "{Binding Path=type}"/>
+                                Content= "{Binding Path=type}"/>
                         <Label Grid.Column="2"
-                 Content="{Binding Path=countNumber}"/>
+                                Content="{Binding Path=countNumber}"
+                               FontWeight="Bold" />
                     </Grid>
 
                     <Grid Grid.Row="1" >
@@ -56,7 +59,8 @@
                         </Grid.ColumnDefinitions>
                         <Label  Grid.Column ="0"
                                   Content="{Binding  Path= companyName}"
-                                  Margin="10,0,0,0"/>
+                                  Margin="10,0,0,0"
+                                FontWeight="Bold" />
                         <Label   Grid.Column ="1"
                                  FlowDirection="LeftToRight" 
                                  Margin="0,0,10,0"

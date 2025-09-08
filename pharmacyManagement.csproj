@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="images\addBtnImg.png" />
+    <None Remove="images\btnCancelNew.png" />
+    <None Remove="images\canceleBtnForCancel.png" />
     <None Remove="images\companyBtnImg.png" />
     <None Remove="images\customer.png" />
     <None Remove="images\customerBtnImg.png" />
@@ -17,6 +19,7 @@
     <None Remove="images\deleteBtnImg.png" />
     <None Remove="images\edit.png" />
     <None Remove="images\editBtnImg.png" />
+    <None Remove="images\entryBtnForAdd.png" />
     <None Remove="images\medicineBtnImg.png" />
     <None Remove="images\medicineTypeBtnImg - Copy.png" />
     <None Remove="images\medicineTypeBtnImg.png" />
@@ -32,6 +35,8 @@
 
   <ItemGroup>
     <Resource Include="images\addBtnImg.png" />
+    <Resource Include="images\btnCancelNew.png" />
+    <Resource Include="images\canceleBtnForCancel.png" />
     <Resource Include="images\companyBtnImg.png" />
     <Resource Include="images\customer.png" />
     <Resource Include="images\customerBtnImg.png" />
@@ -39,6 +44,7 @@
     <Resource Include="images\deleteBtnImg.png" />
     <Resource Include="images\edit.png" />
     <Resource Include="images\editBtnImg.png" />
+    <Resource Include="images\entryBtnForAdd.png" />
     <Resource Include="images\medicineBtnImg.png" />
     <Resource Include="images\medicineTypeBtnImg - Copy.png" />
     <Resource Include="images\medicineTypeBtnImg.png" />

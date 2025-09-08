@@ -1,4 +1,5 @@
 ﻿using pharmacyManagement.classes;
+using pharmacyManagement.forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -51,16 +52,51 @@ namespace pharmacyManagement.screenControls
                 lstVisitorTypeMedicine.Add(d1);
 
             }
+            lstVisitorTypeMedicineView .ItemsSource = lstVisitorTypeMedicine ;
+            lstVisitorTypeMedicineView .Items.Refresh();
+
         }
 
         private void btnEdit_click(object sender, RoutedEventArgs e)
         {
-
+            Button btnVisitorTypeMedicine = (Button)sender;
+            clsVisitorTypeMedicine  visitorTypeMedicine = (clsVisitorTypeMedicine )btnVisitorTypeMedicine .DataContext;
+            wndEditVisitorTypeMedicine  wnd1 = new wndEditVisitorTypeMedicine (visitorTypeMedicine );
+            wnd1.ShowDialog();
+            fillLst();
         }
 
         private void btnDelete_click(object sender, RoutedEventArgs e)
         {
 
+            Button btnDeletVisitorTypeMedicine = (Button)sender;
+            clsVisitorTypeMedicine  visitorTypeMed1 = (clsVisitorTypeMedicine )btnDeletVisitorTypeMedicine .DataContext;
+
+
+            string strMessage = $"ایا از حذف زمینه فعالیت بازاریاب به نام {visitorTypeMed1 .type } مطمئن هستید؟";
+            string strCaption = "حذف";
+            MessageBoxResult answer = MessageBox.Show(strMessage, strCaption, MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            if (answer == MessageBoxResult.No)
+            {
+                return;
+            }
+            clsResultDb result1 = clsVisitorTypeMedicine .deleteFromDb(visitorTypeMed1 .id);
+
+            if (result1.result == true)
+            {
+                fillLst();
+            }
+            else
+            {
+                MessageBox.Show(result1.errMsgIfExist);
+            }
+        }
+
+        private void btnAdd_click(object sender, RoutedEventArgs e)
+        {
+            wndEditVisitorTypeMedicine  wnd1 = new wndEditVisitorTypeMedicine ();
+            wnd1.ShowDialog();
+            fillLst();
         }
     }
 }

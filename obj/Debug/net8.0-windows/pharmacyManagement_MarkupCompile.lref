@@ -1,6 +1,12 @@
 ﻿
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\App.xaml;;
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditCustomer.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditMedicine.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditmedicineCompany.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditMedicineType.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditUsers.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditVisitors.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndEditVisitorTypeMedicine.xaml;;
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndMain.xaml;;
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndPrctice.xaml;;
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\screenControls\customersScreenControl.xaml;;
@@ -10,4 +16,5 @@ FD:\programing\csharp\pharmacyWpf\pharmacyManagement\screenControls\medicineType
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\screenControls\usersScreenControl.xaml;;
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\screenControls\visitorsScreenControl.xaml;;
 FD:\programing\csharp\pharmacyWpf\pharmacyManagement\screenControls\visitorTypeMedicineScreenControl.xaml;;
+FD:\programing\csharp\pharmacyWpf\pharmacyManagement\forms\wndLogin.xaml;;
 

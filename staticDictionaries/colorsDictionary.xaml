@@ -15,4 +15,7 @@
     <SolidColorBrush x:Key="screenBorderColor">#36616C</SolidColorBrush>
     <SolidColorBrush x:Key="listItemBackgroundColor">#EDF3F8</SolidColorBrush>
     <SolidColorBrush x:Key="listItemBackgroundColorMHover">#8AB3D0</SolidColorBrush>
+    <SolidColorBrush x:Key="bttnCancelColor">#B3052E</SolidColorBrush>
+    <SolidColorBrush x:Key="bttnEnterColor">#2EB305</SolidColorBrush>
+    <SolidColorBrush x:Key="txtBoxBackgroundColor">#e1e6e8</SolidColorBrush>
 </ResourceDictionary>

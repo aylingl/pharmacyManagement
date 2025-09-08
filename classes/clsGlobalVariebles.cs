@@ -9,6 +9,7 @@ namespace pharmacyManagement.classes
 
     public static class clsGlobalVariables
     {
-        public static string strActiveUserFullName = "...";
+        public static string? strActiveUserFullName = null ;
+       
     }
 }

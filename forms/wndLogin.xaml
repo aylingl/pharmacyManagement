@@ -1,0 +1,80 @@
+﻿<Window x:Class="pharmacyManagement.forms.wndLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pharmacyManagement.forms"
+        mc:Ignorable="d"
+        Title="wndLogin" Height="300" Width="350"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        Background="Transparent" 
+        AllowsTransparency="True" >
+    <Border BorderBrush="CadetBlue" 
+            BorderThickness="3"
+            CornerRadius="12"
+            Background="White" >
+    <Grid FlowDirection="RightToLeft"
+           >
+       
+            <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                     <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Label Content="نام کاربری:"
+        Grid.Row="0"
+                   Margin="10,0"/>
+            <TextBox Grid.Row="1"
+                     Name="txtUserName"
+                     Height="40"
+                     Margin="10,0"
+                     Template ="{StaticResource tmpTxt1 }"
+                      TextChanged="txtInputs_textChange"/>
+               
+                <Label Grid.Row="2"
+                   Content="رمز عبور:"
+                   Margin="10,0"/>
+            <TextBox Grid.Row="3"
+                     Name="txtPassword"
+                     Height="40"
+                     Margin="10,0"
+                     Template="{StaticResource tmpTxt1 }"
+                     TextChanged="txtInputs_textChange"/>
+                <Label Grid.Row="4"
+                      Name="labWrongMsg"
+                       Content=""
+                       Foreground="Red"
+                       Margin="10,0"
+                       FontFamily="B Mitra"
+                       FontSize="16"/>
+                <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+               
+                <Button  Grid.Column="0"
+                         Content="ورود"
+                        Tag="/images/entryBtnForAdd.png"
+                        Template="{StaticResource tmpltEnterBttn }" Height="44" VerticalAlignment="Center"
+                       Click="btnLogin_click"
+                       Margin="10,0,0,0"/>
+                <Button Grid.Column="2"
+                         Template="{StaticResource tmpltCancelBttn }" Height="44" VerticalAlignment="Center" 
+                        Tag="/images/btnCancelNew.png"
+                        Content="انصراف"
+                       Click="btnCancel_click"
+                         Margin="0,0,10,0"/>
+
+            </Grid> 
+            </Grid>
+     
+    </Grid>
+    </Border>
+</Window>

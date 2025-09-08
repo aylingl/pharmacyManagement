@@ -1,4 +1,5 @@
 ﻿using pharmacyManagement.classes;
+using pharmacyManagement.forms;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -44,6 +45,9 @@ namespace pharmacyManagement.screenControls
                 lstUsers.Add(d1);
 
             }
+            lstUsersView .ItemsSource = lstUsers ;
+            lstUsersView .Items.Refresh();
+
         }
 
         private void control_Loaded(object sender, RoutedEventArgs e)
@@ -55,17 +59,44 @@ namespace pharmacyManagement.screenControls
 
         private void btnEdit_click(object sender, RoutedEventArgs e)
         {
-
+            Button btnUser = (Button)sender;
+            clsUser  user = (clsUser )btnUser .DataContext;
+            wndEditUsers  wnd1 = new wndEditUsers (user);
+            wnd1.ShowDialog();
+            fillLst();
         }
 
         private void btnDelete_click(object sender, RoutedEventArgs e)
         {
 
+            Button btnDeletUser = (Button)sender;
+            clsUser  user1 = (clsUser )btnDeletUser .DataContext;
+
+
+            string strMessage = $"ایا از حذف کاربر به نام {user1 .fullName } مطمئن هستید؟";
+            string strCaption = "حذف";
+            MessageBoxResult answer = MessageBox.Show(strMessage, strCaption, MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No, MessageBoxOptions.RtlReading | MessageBoxOptions.RightAlign);
+            if (answer == MessageBoxResult.No)
+            {
+                return;
+            }
+            clsResultDb result1 = clsUser .deleteFromDb(user1 .id);
+
+            if (result1.result == true)
+            {
+                fillLst();
+            }
+            else
+            {
+                MessageBox.Show(result1.errMsgIfExist);
+            }
         }
 
         private void btnAdd_click(object sender, RoutedEventArgs e)
         {
-
+            wndEditUsers  wnd1 = new wndEditUsers ();
+            wnd1.ShowDialog();
+            fillLst();
         }
     }
 }

@@ -61,13 +61,14 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
+        
 
     <ControlTemplate TargetType="TextBox"
                      x:Key="tmpTxt1">
 
         <Border  CornerRadius="12"
-              Background="PowderBlue" 
-              Margin="20,10"
+              Background="{StaticResource txtBoxBackgroundColor}" 
+             
               >
             <TextBox Background ="Transparent"
                   BorderBrush="Transparent"
@@ -79,4 +80,74 @@
         </Border>
 
     </ControlTemplate>
+
+
+
+    <ControlTemplate x:Key="tmpltEnterBttn" TargetType="Button" >
+        <Border x:Name="brd1"
+             
+             Height="40"
+             CornerRadius="12"
+             Background="{StaticResource bttnEnterColor }"
+             Cursor="Hand">
+            <Grid>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label FontFamily="B Mitra"                     
+                       x:Name="lbl1"                
+                       Grid.Column="1"                
+                       Foreground="White"                  
+                       FontSize="16"                
+                       FontWeight="Bold" 
+                       VerticalContentAlignment="Center"            
+                       HorizontalAlignment="Left"  
+                       Content="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}"/>
+                <Image Source="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Tag}" />
+            </Grid>
+        </Border>
+        <ControlTemplate.Triggers >
+            <Trigger SourceName="brd1"  Property="IsMouseOver" Value="True" >
+                <Setter TargetName="brd1" Property="Background" Value="{StaticResource menuButtonscolorMHover }" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+
+    <ControlTemplate x:Key="tmpltCancelBttn" TargetType="Button" >
+        <Border x:Name="brd1"
+        
+          Height="40"
+          CornerRadius="12"
+          Background="{StaticResource bttnCancelColor  }"
+          Cursor="Hand">
+            <Grid>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lbl1"
+             Grid.Column="1"
+                       HorizontalAlignment="Left"  
+                       VerticalAlignment="Center" 
+                       FontFamily="B Mitra"
+             Foreground="White"  
+             FontSize="16"
+             FontWeight="Bold" 
+             Content="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Content}"/>
+                <Image Grid.Column="0"
+                    Source="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Tag}" />
+            </Grid>
+        </Border>
+        <ControlTemplate.Triggers >
+            <Trigger SourceName="brd1"  Property="IsMouseOver" Value="True" >
+                <Setter TargetName="brd1" Property="Background" Value="{StaticResource menuButtonscolorMHover }" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
 </ResourceDictionary>
